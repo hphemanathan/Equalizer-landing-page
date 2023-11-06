@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+* {
+  margin: 0; }
+
+html {
+  height: 100%; }
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100%; }
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%; }
+
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word; }
+
+#root,
+#__next {
+  isolation: isolate; }
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none; }
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1; }
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance; }
+
+:root {
+  --f-s-h1: clamp(2.5rem, 1.4437rem + 4.507vw, 5.5rem);
+  --f-s-h2: clamp(2rem, 1.8239rem + 0.7512vw, 2.5rem);
+  --f-s-body: clamp(1rem, 0.912rem + 0.3756vw, 1.25rem);
+  --f-s-footer: 16rem;
+  --f-fa: "IBM Plex Sans", sans-serif;
+  --f-w-b: bold;
+  --f-w-n: normal; }
