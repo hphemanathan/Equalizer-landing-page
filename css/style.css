@@ -62,11 +62,76 @@ h3,
 h4 {
   text-wrap: balance; }
 
+body {
+  font-family: var(--f-fa);
+  font-size: var(--f-s-body);
+  font-weight: var(--f-w-n);
+  background-image: url(/assets/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-position: top -200% right 100%; }
+
+:root {
+  --color-black: #191826;
+  --color-white: #fcfaf9;
+  --color-green: #66e2dc;
+  --color-red: #fa7453;
+  --color-yellow: #ffb964;
+  /* Padding */
+  --pad-tb-1: 1rem 0;
+  --pad-tb-1_25: 1.25rem 0;
+  --pad-tb-2_5-rl-2: 2.5rem 2rem;
+  --pad-rl-1_75: 0 1.75rem;
+  --pad-rl-2: 0 2rem;
+  --pad-t-1_62: 1.62rem;
+  --pad-t-1_12: 1.12rem;
+  --pad-b-1_75: 1.75rem;
+  --pad-t-2_5: 2.5rem;
+  --pad-b-2: 2rem;
+  --pad-l-2: 2rem;
+  /* Margins */
+  --mar-t-1_5: 1.5rem;
+  --mar-t-2: 2rem;
+  --mar-t-2_5: 2.5rem;
+  --mar-t-5: 5rem;
+  --mar-t-8: 8rem;
+  --mar-t-10_25: 10.25rem;
+  --mar-b-0_5: 0.5rem;
+  --mar-b-75: 0.75rem;
+  --mar-b-1: 1rem;
+  --mar-b-1_25: 1.25rem;
+  --mar-b-1_5: 1.5rem;
+  --mar-b-1_75: 1.75rem;
+  --mar-b-2: 2rem;
+  --mar-b-3: 3rem;
+  --mar-b-2_5: 2.5rem;
+  --mar-b-4: 4rem;
+  --mar-b-4_5: 4.5rem;
+  --mar-b-5: 5rem;
+  --mar-b-10_38: 10.38rem;
+  --mar-rl-1_5: 0 1.5rem;
+  --mar-rl-1_75: 0 1.75rem;
+  --mar-rl-2: 0 2rem;
+  --mar-r-3-l-2_5: 0 3rem 0 2.5rem; }
+
 :root {
   --f-s-h1: clamp(2.5rem, 1.4437rem + 4.507vw, 5.5rem);
   --f-s-h2: clamp(2rem, 1.8239rem + 0.7512vw, 2.5rem);
-  --f-s-body: clamp(1rem, 0.912rem + 0.3756vw, 1.25rem);
+  --f-s-body: clamp(
+    1rem,
+    0.9119718309859155rem + 0.3755868544600939vw,
+    1.25rem
+  );
   --f-s-footer: 16rem;
   --f-fa: "IBM Plex Sans", sans-serif;
   --f-w-b: bold;
   --f-w-n: normal; }
+
+.header {
+  margin-top: var(--mar-t-2_5);
+  margin-bottom: var(--mar-b-4); }
+
+.section__intro {
+  margin-bottom: var(--mar-b-10_38); }
+  .section__intro--heading {
+    font-size: var(--f-s-h1);
+    margin-bottom: var(--mar-b-1_25); }

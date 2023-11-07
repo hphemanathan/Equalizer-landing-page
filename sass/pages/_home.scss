@@ -1,0 +1,13 @@
+.header {
+  margin-top: var(--mar-t-2_5);
+  margin-bottom: var(--mar-b-4);
+}
+
+.section__intro {
+  margin-bottom: var(--mar-b-10_38);
+
+  &--heading {
+    font-size: var(--f-s-h1);
+    margin-bottom: var(--mar-b-1_25);
+  }
+}
