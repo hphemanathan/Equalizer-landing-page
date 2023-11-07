@@ -1,5 +1,3 @@
-@import "utilities";
-
 *,
 *::before,
 *::after {
@@ -68,4 +66,10 @@ h2,
 h3,
 h4 {
   text-wrap: balance;
+}
+
+body {
+  font-family: var(--f-fa);
+  font-size: var(--f-s-body);
+  font-weight: var(--f-w-n);
 }

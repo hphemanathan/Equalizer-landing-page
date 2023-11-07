@@ -62,6 +62,18 @@ h3,
 h4 {
   text-wrap: balance; }
 
+body {
+  font-family: var(--f-fa);
+  font-size: var(--f-s-body);
+  font-weight: var(--f-w-n); }
+
+:root {
+  --color-black: #191826;
+  --color-white: #fcfaf9;
+  --color-green: #66e2dc;
+  --color-red: #fa7453;
+  --color-yellow: #ffb964; }
+
 :root {
   --f-s-h1: clamp(2.5rem, 1.4437rem + 4.507vw, 5.5rem);
   --f-s-h2: clamp(2rem, 1.8239rem + 0.7512vw, 2.5rem);
