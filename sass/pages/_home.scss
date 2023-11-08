@@ -16,4 +16,22 @@
 
 .section__download {
   background-color: var(--color-black);
+  position: relative;
+  //   & > * {
+  //     position: absolute;
+  //   }
+  &--pattern {
+    position: relative;
+    left: 3rem;
+  }
+
+  &--app {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: -15%;
+  }
+  &--card {
+    background-color: var(--color-red);
+  }
 }
