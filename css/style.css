@@ -139,4 +139,15 @@ body {
     margin-bottom: var(--mar-b-1_25); }
 
 .section__download {
-  background-color: var(--color-black); }
+  background-color: var(--color-black);
+  position: relative; }
+  .section__download--pattern {
+    position: relative;
+    left: 3rem; }
+  .section__download--app {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: -15%; }
+  .section__download--card {
+    background-color: var(--color-red); }
