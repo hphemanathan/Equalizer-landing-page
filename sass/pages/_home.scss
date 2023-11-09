@@ -15,23 +15,55 @@
 }
 
 .section__download {
-  background-color: var(--color-black);
+  background-image: url(/assets/bg-solid-mobile.jpg);
   position: relative;
+  border-radius: 0.75rem;
+  margin-bottom: 25rem;
+
   //   & > * {
   //     position: absolute;
   //   }
   &--pattern {
     position: relative;
     left: 3rem;
+    width: 70%;
   }
 
   &--app {
     width: 50%;
     position: absolute;
     left: 50%;
-    top: -15%;
+    top: -23%;
+    transform: translatex(-50%);
   }
   &--card {
     background-color: var(--color-red);
+    color: var(--color-white);
+    position: absolute;
+    top: 90%;
+    z-index: 9999;
+    padding: var(--pad-rl-2_5);
+    border-radius: 0.75rem;
+    &-heading {
+      font-size: var(--f-s-h2);
+      margin-top: var(--mar-t-3);
+      margin-bottom: var(--mar-b-75);
+    }
+
+    &-text {
+      margin-bottom: var(--mar-b-2_25);
+      line-height: 1.75;
+    }
+
+    &-price {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: var(--mar-b-1);
+      &__amount {
+        font-size: 4rem;
+        font-weight: var(--f-w-b);
+      }
+    }
   }
 }
