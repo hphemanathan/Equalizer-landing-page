@@ -82,6 +82,7 @@ body {
   --pad-tb-2_5-rl-2: 2.5rem 2rem;
   --pad-rl-1_75: 0 1.75rem;
   --pad-rl-2: 0 2rem;
+  --pad-rl-2_5: 0 2.5rem;
   --pad-t-1_62: 1.62rem;
   --pad-t-1_12: 1.12rem;
   --pad-b-1_75: 1.75rem;
@@ -92,6 +93,7 @@ body {
   --mar-t-1_5: 1.5rem;
   --mar-t-2: 2rem;
   --mar-t-2_5: 2.5rem;
+  --mar-t-3: 3rem;
   --mar-t-5: 5rem;
   --mar-t-8: 8rem;
   --mar-t-10_25: 10.25rem;
@@ -103,6 +105,7 @@ body {
   --mar-b-1_75: 1.75rem;
   --mar-b-2: 2rem;
   --mar-b-3: 3rem;
+  --mar-b-2_25: 2.25rem;
   --mar-b-2_5: 2.5rem;
   --mar-b-4: 4rem;
   --mar-b-4_5: 4.5rem;
@@ -139,15 +142,49 @@ body {
     margin-bottom: var(--mar-b-1_25); }
 
 .section__download {
-  background-color: var(--color-black);
-  position: relative; }
+  background-image: url(/assets/bg-solid-mobile.jpg);
+  position: relative;
+  border-radius: 0.75rem;
+  margin-bottom: 25rem; }
   .section__download--pattern {
     position: relative;
-    left: 3rem; }
+    left: 3rem;
+    width: 70%; }
   .section__download--app {
     width: 50%;
     position: absolute;
     left: 50%;
-    top: -15%; }
+    top: -23%;
+    transform: translatex(-50%); }
   .section__download--card {
-    background-color: var(--color-red); }
+    background-color: var(--color-red);
+    color: var(--color-white);
+    position: absolute;
+    top: 90%;
+    z-index: 9999;
+    padding: var(--pad-rl-2_5);
+    border-radius: 0.75rem; }
+    .section__download--card-heading {
+      font-size: var(--f-s-h2);
+      margin-top: var(--mar-t-3);
+      margin-bottom: var(--mar-b-75); }
+    .section__download--card-text {
+      margin-bottom: var(--mar-b-2_25);
+      line-height: 1.75; }
+    .section__download--card-price {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: var(--mar-b-1); }
+      .section__download--card-price__amount {
+        font-size: 4rem;
+        font-weight: var(--f-w-b); }
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none; }
+
+body {
+  background-color: red; }
