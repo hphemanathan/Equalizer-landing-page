@@ -18,7 +18,7 @@
   background-image: url(/assets/bg-solid-mobile.jpg);
   position: relative;
   border-radius: 0.75rem;
-  margin-bottom: 25rem;
+  margin-bottom: 37rem;
 
   //   & > * {
   //     position: absolute;
@@ -67,10 +67,23 @@
     }
     &__button--iphone {
       background-color: var(--color-black);
+      color: var(--color-white);
+      margin-bottom: var(--mar-b-1);
     }
 
     &__button--android {
       background-color: var(--color-white);
+      color: var(--color-black);
+      margin-bottom: var(--mar-b-3);
     }
+  }
+}
+
+.footer {
+  & > * {
+    padding: var(--pad-rl-1_5);
+  }
+  &__logo {
+    margin-bottom: var(--mar-b-2);
   }
 }
