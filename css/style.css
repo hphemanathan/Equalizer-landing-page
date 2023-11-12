@@ -179,12 +179,19 @@ body {
       .section__download--card-price__amount {
         font-size: 4rem;
         font-weight: var(--f-w-b); }
+    .section__download--card__button--iphone {
+      background-color: var(--color-black); }
+    .section__download--card__button--android {
+      background-color: var(--color-white); }
 
 .btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
-  text-decoration: none; }
-
-body {
-  background-color: red; }
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: var(--f-w-b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem; }

@@ -65,5 +65,12 @@
         font-weight: var(--f-w-b);
       }
     }
+    &__button--iphone {
+      background-color: var(--color-black);
+    }
+
+    &__button--android {
+      background-color: var(--color-white);
+    }
   }
 }
