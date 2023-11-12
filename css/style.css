@@ -195,6 +195,15 @@ body {
 .footer__logo {
   margin-bottom: var(--mar-b-2); }
 
+.footer__text {
+  line-height: 1.625rem;
+  margin-bottom: var(--mar-b-4); }
+
+.footer__icon {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: var(--mar-b-5); }
+
 .btn,
 .btn:link,
 .btn:visited {

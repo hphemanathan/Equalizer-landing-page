@@ -80,10 +80,24 @@
 }
 
 .footer {
+  @include tab {
+  }
+
   & > * {
     padding: var(--pad-rl-1_5);
   }
   &__logo {
     margin-bottom: var(--mar-b-2);
+  }
+
+  &__text {
+    line-height: 1.625rem;
+    margin-bottom: var(--mar-b-4);
+  }
+
+  &__icon {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: var(--mar-b-5);
   }
 }
