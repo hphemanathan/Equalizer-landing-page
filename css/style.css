@@ -81,6 +81,7 @@ body {
   --pad-tb-1_25: 1.25rem 0;
   --pad-tb-2_5-rl-2: 2.5rem 2rem;
   --pad-rl-1_75: 0 1.75rem;
+  --pad-rl-1_5: 0 1.5rem;
   --pad-rl-2: 0 2rem;
   --pad-rl-2_5: 0 2.5rem;
   --pad-t-1_62: 1.62rem;
@@ -145,7 +146,7 @@ body {
   background-image: url(/assets/bg-solid-mobile.jpg);
   position: relative;
   border-radius: 0.75rem;
-  margin-bottom: 25rem; }
+  margin-bottom: 37rem; }
   .section__download--pattern {
     position: relative;
     left: 3rem;
@@ -180,9 +181,19 @@ body {
         font-size: 4rem;
         font-weight: var(--f-w-b); }
     .section__download--card__button--iphone {
-      background-color: var(--color-black); }
+      background-color: var(--color-black);
+      color: var(--color-white);
+      margin-bottom: var(--mar-b-1); }
     .section__download--card__button--android {
-      background-color: var(--color-white); }
+      background-color: var(--color-white);
+      color: var(--color-black);
+      margin-bottom: var(--mar-b-3); }
+
+.footer > * {
+  padding: var(--pad-rl-1_5); }
+
+.footer__logo {
+  margin-bottom: var(--mar-b-2); }
 
 .btn,
 .btn:link,
@@ -194,4 +205,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.25rem; }
+  padding: 1.25rem;
+  gap: 0.5rem;
+  border-radius: 0.75rem; }
