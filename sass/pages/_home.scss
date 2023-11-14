@@ -1,12 +1,20 @@
+body {
+  position: relative;
+}
 .header {
   margin: var(--mar-rl-1_5);
-  margin-top: var(--mar-t-2_5);
+  // margin-top: var(--mar-t-2_5);
+  padding-top: var(--pad-t-2_5);
   margin-bottom: var(--mar-b-4);
+  position: relative;
 }
 
-// .container {
-//   width: min(90%);
-// }
+.container {
+  @include tab {
+    width: min(90%);
+    margin: auto;
+  }
+}
 
 .section__intro {
   margin: var(--mar-rl-1_5);
@@ -16,19 +24,13 @@
     display: flex;
   }
 
+  &--wrapper {
+    flex-basis: 70%;
+  }
+
   &--heading {
     font-size: var(--f-s-h1);
     margin-bottom: var(--mar-b-1_25);
-  }
-
-  &--pattern {
-    display: none;
-    @include tab {
-      display: block;
-      position: absolute;
-      top: -3rem;
-      right: -2rem;
-    }
   }
 }
 
