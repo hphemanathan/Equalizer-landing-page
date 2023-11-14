@@ -138,9 +138,20 @@ body {
 .section__intro {
   margin: var(--mar-rl-1_5);
   margin-bottom: var(--mar-b-10_38); }
+  @media (min-width: 40.5em) {
+    .section__intro {
+      display: flex; } }
   .section__intro--heading {
     font-size: var(--f-s-h1);
     margin-bottom: var(--mar-b-1_25); }
+  .section__intro--pattern {
+    display: none; }
+    @media (min-width: 40.5em) {
+      .section__intro--pattern {
+        display: block;
+        position: absolute;
+        top: -3rem;
+        right: -2rem; } }
 
 .section__download {
   background-image: url(/assets/bg-solid-mobile.jpg);
