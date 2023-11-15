@@ -1,16 +1,34 @@
+.container {
+  @include tab {
+    width: 90%;
+    margin: var(--mar-rl-2);
+  }
+}
+
 .header {
   margin: var(--mar-rl-1_5);
   margin-top: var(--mar-t-2_5);
   margin-bottom: var(--mar-b-4);
+
+  @include tab {
+    margin-bottom: var(--mar-b-6);
+  }
 }
 
 .section__intro {
   margin: var(--mar-rl-1_5);
   margin-bottom: var(--mar-b-10_38);
 
+  @include tab {
+    width: 70%;
+  }
+
   &--heading {
     font-size: var(--f-s-h1);
     margin-bottom: var(--mar-b-1_25);
+    @include tab {
+      margin-bottom: var(--mar-b-1_75);
+    }
   }
 }
 

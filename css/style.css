@@ -68,7 +68,13 @@ body {
   font-weight: var(--f-w-n);
   background-image: url(/assets/bg-main-mobile.png);
   background-repeat: no-repeat;
-  background-position: top -200% right 100%; }
+  background-position: top -14rem right -12rem; }
+  @media (min-width: 40.5em) {
+    body {
+      background: url(/assets/bg-pattern-1.svg), url(/assets/bg-main-tablet.png);
+      background-repeat: no-repeat;
+      background-position: top -2rem right -2rem, top -20rem left -20rem;
+      background-size: 17rem 25rem, cover; } }
 
 :root {
   --color-black: #191826;
@@ -111,6 +117,7 @@ body {
   --mar-b-4: 4rem;
   --mar-b-4_5: 4.5rem;
   --mar-b-5: 5rem;
+  --mar-b-6: 6rem;
   --mar-b-10_38: 10.38rem;
   --mar-rl-1_5: 0 1.5rem;
   --mar-rl-1_75: 0 1.75rem;
@@ -130,17 +137,31 @@ body {
   --f-w-b: bold;
   --f-w-n: normal; }
 
+@media (min-width: 40.5em) {
+  .container {
+    width: 90%;
+    margin: var(--mar-rl-2); } }
+
 .header {
   margin: var(--mar-rl-1_5);
   margin-top: var(--mar-t-2_5);
   margin-bottom: var(--mar-b-4); }
+  @media (min-width: 40.5em) {
+    .header {
+      margin-bottom: var(--mar-b-6); } }
 
 .section__intro {
   margin: var(--mar-rl-1_5);
   margin-bottom: var(--mar-b-10_38); }
+  @media (min-width: 40.5em) {
+    .section__intro {
+      width: 70%; } }
   .section__intro--heading {
     font-size: var(--f-s-h1);
     margin-bottom: var(--mar-b-1_25); }
+    @media (min-width: 40.5em) {
+      .section__intro--heading {
+        margin-bottom: var(--mar-b-1_75); } }
 
 .section__download {
   background-image: url(/assets/bg-solid-mobile.jpg);

@@ -74,5 +74,12 @@ body {
   font-weight: var(--f-w-n);
   background-image: url(/assets/bg-main-mobile.png);
   background-repeat: no-repeat;
-  background-position: top -200% right 100%;
+  background-position: top -14rem right -12rem;
+
+  @include tab {
+    background: url(/assets/bg-pattern-1.svg), url(/assets/bg-main-tablet.png);
+    background-repeat: no-repeat;
+    background-position: top -2rem right -2rem, top -20rem left -20rem;
+    background-size: 17rem 25rem, cover;
+  }
 }
