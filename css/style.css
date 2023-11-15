@@ -73,13 +73,8 @@ body {
     body {
       background: url(/assets/bg-pattern-1.svg), url(/assets/bg-main-tablet.png);
       background-repeat: no-repeat;
-<<<<<<< HEAD
       background-position: top -2rem right -2rem, top -20rem left -20rem;
       background-size: 17rem 25rem, cover; } }
-=======
-      background-position: top -3rem right -3rem, top -18rem left -22rem;
-      background-size: 17rem 25rem; } }
->>>>>>> main
 
 :root {
   --color-black: #191826;
@@ -142,7 +137,6 @@ body {
   --f-w-b: bold;
   --f-w-n: normal; }
 
-<<<<<<< HEAD
 @media (min-width: 40.5em) {
   .container {
     width: 90%;
@@ -150,39 +144,18 @@ body {
 
 .header {
   margin: var(--mar-rl-1_5);
-  margin-top: var(--mar-t-2_5);
+  padding-top: var(--pad-t-2_5);
   margin-bottom: var(--mar-b-4); }
   @media (min-width: 40.5em) {
     .header {
       margin-bottom: var(--mar-b-6); } }
-=======
-body {
-  position: relative; }
-
-.header {
-  margin: var(--mar-rl-1_5);
-  padding-top: var(--pad-t-2_5);
-  margin-bottom: var(--mar-b-4);
-  position: relative; }
-
-@media (min-width: 40.5em) {
-  .container {
-    width: 90%;
-    margin: auto; } }
->>>>>>> main
 
 .section__intro {
   margin: var(--mar-rl-1_5);
   margin-bottom: var(--mar-b-10_38); }
   @media (min-width: 40.5em) {
     .section__intro {
-<<<<<<< HEAD
       width: 70%; } }
-=======
-      display: flex; } }
-  .section__intro--wrapper {
-    flex-basis: 70%; }
->>>>>>> main
   .section__intro--heading {
     font-size: var(--f-s-h1);
     margin-bottom: var(--mar-b-1_25); }
