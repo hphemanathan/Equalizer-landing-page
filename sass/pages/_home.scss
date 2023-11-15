@@ -1,6 +1,5 @@
 .container {
   @include tab {
-    width: 90%;
     margin: var(--mar-rl-2);
   }
 }
@@ -12,6 +11,7 @@
   margin-bottom: var(--mar-b-4);
 
   @include tab {
+    margin: var(--mar-rl-2);
     margin-bottom: var(--mar-b-6);
   }
 }
@@ -22,6 +22,8 @@
 
   @include tab {
     width: 70%;
+    margin: 0;
+    margin-bottom: var(--mar-b-15_56);
   }
 
   &--heading {
@@ -39,6 +41,10 @@
   border-radius: 0.75rem;
   margin-bottom: 37rem;
 
+  @include tab {
+    background-image: url(/assets/bg-solid-tab.jpg);
+  }
+
   //   & > * {
   //     position: absolute;
   //   }
@@ -46,6 +52,12 @@
     position: relative;
     left: 3rem;
     width: 70%;
+
+    @include tab {
+      width: 50%;
+      left: 50%;
+      transform: translatex(-50%);
+    }
   }
 
   &--app {
@@ -54,6 +66,12 @@
     left: 50%;
     top: -23%;
     transform: translatex(-50%);
+
+    @include tab {
+      top: -33%;
+      left: 4rem;
+      transform: translate(0);
+    }
   }
   &--card {
     background-color: var(--color-red);
@@ -63,6 +81,9 @@
     z-index: 9999;
     padding: var(--pad-rl-2_5);
     border-radius: 0.75rem;
+    @include tab {
+      width: 57%;
+    }
     &-heading {
       font-size: var(--f-s-h2);
       margin-top: var(--mar-t-3);
