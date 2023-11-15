@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .container {
   @include tab {
     width: 90%;
@@ -6,29 +5,14 @@
   }
 }
 
-=======
-body {
-  position: relative;
-}
->>>>>>> main
 .header {
   margin: var(--mar-rl-1_5);
   // margin-top: var(--mar-t-2_5);
   padding-top: var(--pad-t-2_5);
   margin-bottom: var(--mar-b-4);
-<<<<<<< HEAD
 
   @include tab {
     margin-bottom: var(--mar-b-6);
-=======
-  position: relative;
-}
-
-.container {
-  @include tab {
-    width: min(90%);
-    margin: auto;
->>>>>>> main
   }
 }
 
@@ -37,15 +21,7 @@ body {
   margin-bottom: var(--mar-b-10_38);
 
   @include tab {
-<<<<<<< HEAD
     width: 70%;
-=======
-    display: flex;
-  }
-
-  &--wrapper {
-    flex-basis: 70%;
->>>>>>> main
   }
 
   &--heading {
