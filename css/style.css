@@ -191,6 +191,7 @@ body {
     transform: translatex(-50%); }
     @media (min-width: 40.5em) {
       .section__download--app {
+        width: 40%;
         top: -33%;
         left: 4rem;
         transform: translate(0); } }
@@ -204,7 +205,9 @@ body {
     border-radius: 0.75rem; }
     @media (min-width: 40.5em) {
       .section__download--card {
-        width: 57%; } }
+        width: 57%;
+        right: 3rem;
+        top: 9rem; } }
     .section__download--card-heading {
       font-size: var(--f-s-h2);
       margin-top: var(--mar-t-3);

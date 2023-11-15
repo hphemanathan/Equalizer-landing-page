@@ -68,6 +68,7 @@
     transform: translatex(-50%);
 
     @include tab {
+      width: 40%;
       top: -33%;
       left: 4rem;
       transform: translate(0);
@@ -83,6 +84,8 @@
     border-radius: 0.75rem;
     @include tab {
       width: 57%;
+      right: 3rem;
+      top: 9rem;
     }
     &-heading {
       font-size: var(--f-s-h2);
