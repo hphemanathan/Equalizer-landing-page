@@ -167,70 +167,32 @@ body {
         margin-bottom: var(--mar-b-1_75); } }
 
 .section__download {
-  background-image: url(/assets/bg-solid-mobile.jpg);
-  position: relative;
-  border-radius: 0.75rem;
-  margin-bottom: 37rem; }
+  position: relative; }
+  .section__download--bg {
+    border-radius: 0.75rem;
+    width: 100%; }
   @media (min-width: 40.5em) {
     .section__download {
-      background-image: url(/assets/bg-solid-tab.jpg); } }
+      background: url(/assets/bg-solid-tab.jpg);
+      background-size: 43.5rem 37.5rem; } }
   .section__download--pattern {
-    position: relative;
-    left: 3rem;
-    width: 70%; }
-    @media (min-width: 40.5em) {
-      .section__download--pattern {
-        width: 50%;
-        left: 50%;
-        transform: translatex(-50%); } }
-  .section__download--app {
-    width: 50%;
     position: absolute;
+    top: 0;
     left: 50%;
-    top: -23%;
+    transform: translatex(-50%);
+    width: 75%; }
+  .section__download--app {
+    width: 60%;
+    position: absolute;
+    top: -18%;
+    left: 50%;
     transform: translatex(-50%); }
     @media (min-width: 40.5em) {
       .section__download--app {
         width: 40%;
-        top: -33%;
+        top: -42%;
         left: 4rem;
         transform: translate(0); } }
-  .section__download--card {
-    background-color: var(--color-red);
-    color: var(--color-white);
-    position: absolute;
-    top: 90%;
-    z-index: 9999;
-    padding: var(--pad-rl-2_5);
-    border-radius: 0.75rem; }
-    @media (min-width: 40.5em) {
-      .section__download--card {
-        width: 57%;
-        right: 3rem;
-        top: 9rem; } }
-    .section__download--card-heading {
-      font-size: var(--f-s-h2);
-      margin-top: var(--mar-t-3);
-      margin-bottom: var(--mar-b-75); }
-    .section__download--card-text {
-      margin-bottom: var(--mar-b-2_25);
-      line-height: 1.75; }
-    .section__download--card-price {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: var(--mar-b-1); }
-      .section__download--card-price__amount {
-        font-size: 4rem;
-        font-weight: var(--f-w-b); }
-    .section__download--card__button--iphone {
-      background-color: var(--color-black);
-      color: var(--color-white);
-      margin-bottom: var(--mar-b-1); }
-    .section__download--card__button--android {
-      background-color: var(--color-white);
-      color: var(--color-black);
-      margin-bottom: var(--mar-b-3); }
 
 .footer > * {
   padding: var(--pad-rl-1_5); }
