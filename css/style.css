@@ -123,7 +123,9 @@ body {
   --mar-rl-1_5: 0 1.5rem;
   --mar-rl-1_75: 0 1.75rem;
   --mar-rl-2: 0 2rem;
-  --mar-r-3-l-2_5: 0 3rem 0 2.5rem; }
+  --mar-r-3-l-2_5: 0 3rem 0 2.5rem;
+  --width-card: min(100%, 24rem);
+  --width-pattern: min(75%, 18rem); }
 
 :root {
   --f-s-h1: clamp(2.5rem, 1.4437rem + 4.507vw, 5.5rem);
@@ -177,32 +179,24 @@ body {
     top: 0;
     left: 50%;
     transform: translatex(-50%);
-    width: 75%; }
+    width: var(--width-pattern); }
   .section__download--app {
-    width: 60%;
+    width: 15rem;
     position: absolute;
-    top: -18%;
+    top: -7rem;
     left: 50%;
     transform: translatex(-50%); }
-    @media (min-width: 40.5em) {
-      .section__download--app {
-        width: 40%;
-        top: -15%;
-        left: 4rem;
-        transform: translate(0); } }
   .section__download--card {
     background-color: var(--color-red);
     color: var(--color-white);
     position: absolute;
-    top: 70%;
+    top: 25rem;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 9999;
+    width: var(--width-card);
     padding: var(--pad-rl-2_5);
     border-radius: 0.75rem; }
-    @media (min-width: 40.5em) {
-      .section__download--card {
-        width: 57%;
-        right: 3rem;
-        top: 10rem; } }
     .section__download--card-heading {
       font-size: var(--f-s-h2);
       margin-top: var(--mar-t-3);
