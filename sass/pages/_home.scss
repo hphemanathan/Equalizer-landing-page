@@ -37,6 +37,7 @@
 
 .section__download {
   position: relative;
+  margin-bottom: 30rem;
 
   &--bg {
     border-radius: 0.75rem;
@@ -70,57 +71,57 @@
 
     @include tab {
       width: 40%;
-      top: -42%;
+      top: -15%;
       left: 4rem;
       transform: translate(0);
     }
   }
-  //   &--card {
-  //     background-color: var(--color-red);
-  //     color: var(--color-white);
-  //     position: absolute;
-  //     top: 90%;
-  //     z-index: 9999;
-  //     padding: var(--pad-rl-2_5);
-  //     border-radius: 0.75rem;
-  //     @include tab {
-  //       width: 57%;
-  //       right: 3rem;
-  //       top: 10rem;
-  //     }
-  //     &-heading {
-  //       font-size: var(--f-s-h2);
-  //       margin-top: var(--mar-t-3);
-  //       margin-bottom: var(--mar-b-75);
-  //     }
+  &--card {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    position: absolute;
+    top: 70%;
+    z-index: 9999;
+    padding: var(--pad-rl-2_5);
+    border-radius: 0.75rem;
+    @include tab {
+      width: 57%;
+      right: 3rem;
+      top: 10rem;
+    }
+    &-heading {
+      font-size: var(--f-s-h2);
+      margin-top: var(--mar-t-3);
+      margin-bottom: var(--mar-b-75);
+    }
 
-  //     &-text {
-  //       margin-bottom: var(--mar-b-2_25);
-  //       line-height: 1.75;
-  //     }
+    &-text {
+      margin-bottom: var(--mar-b-2_25);
+      line-height: 1.75;
+    }
 
-  //     &-price {
-  //       display: flex;
-  //       align-items: center;
-  //       gap: 1rem;
-  //       margin-bottom: var(--mar-b-1);
-  //       &__amount {
-  //         font-size: 4rem;
-  //         font-weight: var(--f-w-b);
-  //       }
-  //     }
-  //     &__button--iphone {
-  //       background-color: var(--color-black);
-  //       color: var(--color-white);
-  //       margin-bottom: var(--mar-b-1);
-  //     }
+    &-price {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: var(--mar-b-1);
+      &__amount {
+        font-size: 4rem;
+        font-weight: var(--f-w-b);
+      }
+    }
+    &__button--iphone {
+      background-color: var(--color-black);
+      color: var(--color-white);
+      margin-bottom: var(--mar-b-1);
+    }
 
-  //     &__button--android {
-  //       background-color: var(--color-white);
-  //       color: var(--color-black);
-  //       margin-bottom: var(--mar-b-3);
-  //     }
-  //   }
+    &__button--android {
+      background-color: var(--color-white);
+      color: var(--color-black);
+      margin-bottom: var(--mar-b-3);
+    }
+  }
 }
 
 .footer {
@@ -137,6 +138,16 @@
   &__text {
     line-height: 1.625rem;
     margin-bottom: var(--mar-b-4);
+    &--email {
+      color: var(--color-black);
+      font-weight: bold;
+      text-decoration: none;
+
+      &:hover,
+      &:active {
+        cursor: pointer;
+      }
+    }
   }
 
   &__icon {

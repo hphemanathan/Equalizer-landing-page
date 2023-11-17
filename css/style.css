@@ -167,7 +167,8 @@ body {
         margin-bottom: var(--mar-b-1_75); } }
 
 .section__download {
-  position: relative; }
+  position: relative;
+  margin-bottom: 30rem; }
   .section__download--bg {
     border-radius: 0.75rem;
     width: 100%; }
@@ -186,9 +187,45 @@ body {
     @media (min-width: 40.5em) {
       .section__download--app {
         width: 40%;
-        top: -42%;
+        top: -15%;
         left: 4rem;
         transform: translate(0); } }
+  .section__download--card {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    position: absolute;
+    top: 70%;
+    z-index: 9999;
+    padding: var(--pad-rl-2_5);
+    border-radius: 0.75rem; }
+    @media (min-width: 40.5em) {
+      .section__download--card {
+        width: 57%;
+        right: 3rem;
+        top: 10rem; } }
+    .section__download--card-heading {
+      font-size: var(--f-s-h2);
+      margin-top: var(--mar-t-3);
+      margin-bottom: var(--mar-b-75); }
+    .section__download--card-text {
+      margin-bottom: var(--mar-b-2_25);
+      line-height: 1.75; }
+    .section__download--card-price {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: var(--mar-b-1); }
+      .section__download--card-price__amount {
+        font-size: 4rem;
+        font-weight: var(--f-w-b); }
+    .section__download--card__button--iphone {
+      background-color: var(--color-black);
+      color: var(--color-white);
+      margin-bottom: var(--mar-b-1); }
+    .section__download--card__button--android {
+      background-color: var(--color-white);
+      color: var(--color-black);
+      margin-bottom: var(--mar-b-3); }
 
 .footer > * {
   padding: var(--pad-rl-1_5); }
@@ -199,6 +236,12 @@ body {
 .footer__text {
   line-height: 1.625rem;
   margin-bottom: var(--mar-b-4); }
+  .footer__text--email {
+    color: var(--color-black);
+    font-weight: bold;
+    text-decoration: none; }
+    .footer__text--email:hover, .footer__text--email:active {
+      cursor: pointer; }
 
 .footer__icon {
   display: flex;
