@@ -52,7 +52,7 @@
     top: 0;
     left: 50%;
     transform: translatex(-50%);
-    width: 75%;
+    width: var(--width-pattern);
 
     // @include tab {
     //   width: 30%;
@@ -63,32 +63,35 @@
   }
 
   &--app {
-    width: 60%;
+    width: 15rem;
     position: absolute;
-    top: -18%;
+    top: -7rem;
     left: 50%;
     transform: translatex(-50%);
 
-    @include tab {
-      width: 40%;
-      top: -15%;
-      left: 4rem;
-      transform: translate(0);
-    }
+    // @include tab {
+    //   width: 40%;
+    //   top: -15%;
+    //   left: 4rem;
+    //   transform: translate(0);
+    // }
   }
   &--card {
     background-color: var(--color-red);
     color: var(--color-white);
     position: absolute;
-    top: 70%;
+    top: 25rem;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 9999;
+    width: var(--width-card);
     padding: var(--pad-rl-2_5);
     border-radius: 0.75rem;
-    @include tab {
-      width: 57%;
-      right: 3rem;
-      top: 10rem;
-    }
+    // @include tab {
+    //   width: 57%;
+    //   right: 3rem;
+    //   top: 10rem;
+    // }
     &-heading {
       font-size: var(--f-s-h2);
       margin-top: var(--mar-t-3);
