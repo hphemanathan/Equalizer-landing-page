@@ -43,11 +43,6 @@
     width: 100%;
   }
 
-  @include tab {
-    background: url(/assets/bg-solid-tab.jpg);
-    background-size: 43.5rem 37.5rem;
-  }
-
   //   & > * {
   //     position: absolute;
   //   }
