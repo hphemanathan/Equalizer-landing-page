@@ -171,10 +171,6 @@ body {
   .section__download--bg {
     border-radius: 0.75rem;
     width: 100%; }
-  @media (min-width: 40.5em) {
-    .section__download {
-      background: url(/assets/bg-solid-tab.jpg);
-      background-size: 43.5rem 37.5rem; } }
   .section__download--pattern {
     position: absolute;
     top: 0;
