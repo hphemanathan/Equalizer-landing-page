@@ -79,7 +79,7 @@ body {
   @include tab {
     background: url(/assets/bg-pattern-1.svg), url(/assets/bg-main-tablet.png);
     background-repeat: no-repeat;
-    background-position: top -2rem right -2rem, top -20rem left -20rem;
+    background-position: top -2rem right -2rem, top -10rem left -10rem;
     background-size: 17rem 25rem, cover;
   }
 }
