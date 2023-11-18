@@ -73,13 +73,13 @@
     left: 50%;
     transform: translatex(-50%);
 
-    // @include tab {
-    //   width: 40%;
-    //   top: -15%;
-    width: 17rem;
-    left: 4rem;
-    transform: translate(0);
-    // }
+    @include tab {
+      //   width: 40%;
+      //   top: -15%;
+      width: 17rem;
+      left: 10%;
+      transform: translate(0);
+    }
   }
   &--card {
     background-color: var(--color-red);
@@ -95,9 +95,10 @@
 
     @include tab {
       width: 25rem;
-      left: 15rem;
+      left: 65%;
+      // right: 50%;
       top: 11rem;
-      transform: translate(0);
+      // transform: translateX(-25%);
     }
 
     &-heading {
@@ -150,6 +151,7 @@
     @include tab {
       display: flex;
       align-items: center;
+      justify-content: space-between;
     }
   }
 
