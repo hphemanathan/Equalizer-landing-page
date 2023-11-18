@@ -194,10 +194,12 @@ body {
     position: absolute;
     top: -7rem;
     left: 50%;
-    transform: translatex(-50%);
-    width: 17rem;
-    left: 4rem;
-    transform: translate(0); }
+    transform: translatex(-50%); }
+    @media (min-width: 40.5em) {
+      .section__download--app {
+        width: 17rem;
+        left: 10%;
+        transform: translate(0); } }
   .section__download--card {
     background-color: var(--color-red);
     color: var(--color-white);
@@ -212,9 +214,8 @@ body {
     @media (min-width: 40.5em) {
       .section__download--card {
         width: 25rem;
-        left: 15rem;
-        top: 11rem;
-        transform: translate(0); } }
+        left: 65%;
+        top: 11rem; } }
     .section__download--card-heading {
       font-size: var(--f-s-h2);
       margin-top: var(--mar-t-3);
@@ -247,7 +248,8 @@ body {
 @media (min-width: 40.5em) {
   .footer__wrapper {
     display: flex;
-    align-items: center; } }
+    align-items: center;
+    justify-content: space-between; } }
 
 .footer__text {
   line-height: 1.625rem;
