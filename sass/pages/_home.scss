@@ -37,7 +37,11 @@
 
 .section__download {
   position: relative;
-  margin-bottom: 30rem;
+  margin-bottom: var(--mar-b-30);
+
+  @include tab {
+    margin-bottom: var(--mar-b-11_44);
+  }
 
   &--bg {
     border-radius: 0.75rem;
@@ -54,12 +58,12 @@
     transform: translatex(-50%);
     width: var(--width-pattern);
 
-    // @include tab {
-    //   width: 30%;
-    //   top: 0;
-    //   left: 50%;
-    //   transform: translatex(-40%);
-    // }
+    @include tab {
+      //   width: 30%;
+      top: -1rem;
+      //   left: 50%;
+      transform: translatex(-45%);
+    }
   }
 
   &--app {
@@ -72,8 +76,9 @@
     // @include tab {
     //   width: 40%;
     //   top: -15%;
-    //   left: 4rem;
-    //   transform: translate(0);
+    width: 17rem;
+    left: 4rem;
+    transform: translate(0);
     // }
   }
   &--card {
@@ -87,11 +92,14 @@
     width: var(--width-card);
     padding: var(--pad-rl-2_5);
     border-radius: 0.75rem;
-    // @include tab {
-    //   width: 57%;
-    //   right: 3rem;
-    //   top: 10rem;
-    // }
+
+    @include tab {
+      width: 25rem;
+      left: 15rem;
+      top: 11rem;
+      transform: translate(0);
+    }
+
     &-heading {
       font-size: var(--f-s-h2);
       margin-top: var(--mar-t-3);
@@ -99,7 +107,6 @@
     }
 
     &-text {
-      margin-bottom: var(--mar-b-2_25);
       line-height: 1.75;
     }
 
@@ -107,7 +114,8 @@
       display: flex;
       align-items: center;
       gap: 1rem;
-      margin-bottom: var(--mar-b-1);
+      list-style: none;
+
       &__amount {
         font-size: 4rem;
         font-weight: var(--f-w-b);
@@ -136,6 +144,13 @@
   }
   &__logo {
     margin-bottom: var(--mar-b-2);
+  }
+
+  &__wrapper {
+    @include tab {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__text {

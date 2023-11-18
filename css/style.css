@@ -73,7 +73,7 @@ body {
     body {
       background: url(/assets/bg-pattern-1.svg), url(/assets/bg-main-tablet.png);
       background-repeat: no-repeat;
-      background-position: top -2rem right -2rem, top -20rem left -20rem;
+      background-position: top -2rem right -2rem, top -10rem left -10rem;
       background-size: 17rem 25rem, cover; } }
 
 :root {
@@ -119,7 +119,9 @@ body {
   --mar-b-5: 5rem;
   --mar-b-6: 6rem;
   --mar-b-10_38: 10.38rem;
+  --mar-b-11_44: 11.44rem;
   --mar-b-15_56: 15.56rem;
+  --mar-b-30: 30rem;
   --mar-rl-1_5: 0 1.5rem;
   --mar-rl-1_75: 0 1.75rem;
   --mar-rl-2: 0 2rem;
@@ -170,7 +172,10 @@ body {
 
 .section__download {
   position: relative;
-  margin-bottom: 30rem; }
+  margin-bottom: var(--mar-b-30); }
+  @media (min-width: 40.5em) {
+    .section__download {
+      margin-bottom: var(--mar-b-11_44); } }
   .section__download--bg {
     border-radius: 0.75rem;
     width: 100%; }
@@ -180,12 +185,19 @@ body {
     left: 50%;
     transform: translatex(-50%);
     width: var(--width-pattern); }
+    @media (min-width: 40.5em) {
+      .section__download--pattern {
+        top: -1rem;
+        transform: translatex(-45%); } }
   .section__download--app {
     width: 15rem;
     position: absolute;
     top: -7rem;
     left: 50%;
-    transform: translatex(-50%); }
+    transform: translatex(-50%);
+    width: 17rem;
+    left: 4rem;
+    transform: translate(0); }
   .section__download--card {
     background-color: var(--color-red);
     color: var(--color-white);
@@ -197,18 +209,23 @@ body {
     width: var(--width-card);
     padding: var(--pad-rl-2_5);
     border-radius: 0.75rem; }
+    @media (min-width: 40.5em) {
+      .section__download--card {
+        width: 25rem;
+        left: 15rem;
+        top: 11rem;
+        transform: translate(0); } }
     .section__download--card-heading {
       font-size: var(--f-s-h2);
       margin-top: var(--mar-t-3);
       margin-bottom: var(--mar-b-75); }
     .section__download--card-text {
-      margin-bottom: var(--mar-b-2_25);
       line-height: 1.75; }
     .section__download--card-price {
       display: flex;
       align-items: center;
       gap: 1rem;
-      margin-bottom: var(--mar-b-1); }
+      list-style: none; }
       .section__download--card-price__amount {
         font-size: 4rem;
         font-weight: var(--f-w-b); }
@@ -226,6 +243,11 @@ body {
 
 .footer__logo {
   margin-bottom: var(--mar-b-2); }
+
+@media (min-width: 40.5em) {
+  .footer__wrapper {
+    display: flex;
+    align-items: center; } }
 
 .footer__text {
   line-height: 1.625rem;
