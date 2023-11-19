@@ -202,6 +202,9 @@ body {
   @media (min-width: 40.5em) {
     .section__download {
       margin-bottom: var(--mar-b-11_44); } }
+  @media (min-width: 70em) {
+    .section__download {
+      margin-bottom: var(--mar-b-12_62); } }
   .section__download--bg {
     border-radius: 0.75rem;
     width: 100%; }
@@ -293,6 +296,10 @@ body {
       background-color: var(--color-white);
       color: var(--color-black);
       margin-bottom: var(--mar-b-3); }
+
+@media (min-width: 70em) {
+  .footer {
+    margin: var(--mar-rl-10_31); } }
 
 .footer > * {
   padding: var(--pad-rl-1_5); }

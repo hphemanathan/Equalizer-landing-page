@@ -56,6 +56,10 @@
     margin-bottom: var(--mar-b-11_44);
   }
 
+  @include desktop {
+    margin-bottom: var(--mar-b-12_62);
+  }
+
   &--bg {
     border-radius: 0.75rem;
     width: 100%;
@@ -185,7 +189,8 @@
 }
 
 .footer {
-  @include tab {
+  @include desktop {
+    margin: var(--mar-rl-10_31);
   }
 
   & > * {
