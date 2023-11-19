@@ -1,9 +1,16 @@
 $breakpoints: (
   "tab": 40.5em,
+  "desktop": 70em,
 );
 
 @mixin tab {
   @media (min-width: map-get($breakpoints, "tab")) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: map-get($breakpoints, "desktop")) {
     @content;
   }
 }
