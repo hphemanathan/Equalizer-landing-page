@@ -95,10 +95,12 @@ body {
   --pad-rl-1_5: 0 1.5rem;
   --pad-rl-2: 0 2rem;
   --pad-rl-2_5: 0 2.5rem;
+  --pad-rl-3_5: 0 3.5rem;
   --pad-t-1_62: 1.62rem;
   --pad-t-1_12: 1.12rem;
   --pad-b-1_75: 1.75rem;
   --pad-t-2_5: 2.5rem;
+  --pad-t-3_5: 3.5rem;
   --pad-b-2: 2rem;
   --pad-l-2: 2rem;
   /* Margins */
@@ -106,6 +108,7 @@ body {
   --mar-t-2: 2rem;
   --mar-t-2_5: 2.5rem;
   --mar-t-3: 3rem;
+  --mar-t-3_62: 3.62rem;
   --mar-t-5: 5rem;
   --mar-t-8: 8rem;
   --mar-t-3_87: 3.87rem;
@@ -114,6 +117,7 @@ body {
   --mar-b-75: 0.75rem;
   --mar-b-1: 1rem;
   --mar-b-1_25: 1.25rem;
+  --mar-b-1_38: 1.38rem;
   --mar-b-1_5: 1.5rem;
   --mar-b-1_75: 1.75rem;
   --mar-b-2: 2rem;
@@ -127,11 +131,13 @@ body {
   --mar-b-7_94: 7.94rem;
   --mar-b-10_38: 10.38rem;
   --mar-b-11_44: 11.44rem;
+  --mar-b-12_62: 12.62rem;
   --mar-b-15_56: 15.56rem;
   --mar-b-30: 30rem;
   --mar-rl-1_5: 0 1.5rem;
   --mar-rl-1_75: 0 1.75rem;
   --mar-rl-2: 0 2rem;
+  --mar-rl-3_5: 0 3.5rem;
   --mar-rl-10_31: 0 10.31rem;
   --mar-r-3-l-2_5: 0 3rem 0 2.5rem;
   --width-card: min(100%, 24rem);
@@ -196,6 +202,9 @@ body {
   @media (min-width: 40.5em) {
     .section__download {
       margin-bottom: var(--mar-b-11_44); } }
+  @media (min-width: 70em) {
+    .section__download {
+      margin-bottom: var(--mar-b-12_62); } }
   .section__download--bg {
     border-radius: 0.75rem;
     width: 100%; }
@@ -209,6 +218,12 @@ body {
       .section__download--pattern {
         top: -1rem;
         transform: translatex(-45%); } }
+    @media (min-width: 70em) {
+      .section__download--pattern {
+        left: 30%;
+        top: -3rem;
+        transform: translateX(0);
+        width: 20rem; } }
   .section__download--app {
     width: 15rem;
     position: absolute;
@@ -244,18 +259,32 @@ body {
         top: 11rem; } }
     @media (min-width: 70em) {
       .section__download--card {
-        width: 27.875rem; } }
+        width: 27.875rem;
+        padding: var(--pad-rl-3_5);
+        left: 50%;
+        transform: translateX(0);
+        top: 5.62rem; } }
     .section__download--card-heading {
       font-size: var(--f-s-h2);
       margin-top: var(--mar-t-3);
       margin-bottom: var(--mar-b-75); }
+      @media (min-width: 70em) {
+        .section__download--card-heading {
+          margin-top: var(--mar-t-3_62);
+          margin-bottom: var(--mar-b-1_38); } }
     .section__download--card-text {
       line-height: 1.75; }
+      @media (min-width: 70em) {
+        .section__download--card-text {
+          margin-bottom: var(--mar-b-2); } }
     .section__download--card-price {
       display: flex;
       align-items: center;
       gap: 1rem;
       list-style: none; }
+      @media (min-width: 70em) {
+        .section__download--card-price {
+          margin-bottom: var(--mar-b-2); } }
       .section__download--card-price__amount {
         font-size: 4rem;
         font-weight: var(--f-w-b); }
@@ -267,6 +296,10 @@ body {
       background-color: var(--color-white);
       color: var(--color-black);
       margin-bottom: var(--mar-b-3); }
+
+@media (min-width: 70em) {
+  .footer {
+    margin: var(--mar-rl-10_31); } }
 
 .footer > * {
   padding: var(--pad-rl-1_5); }
