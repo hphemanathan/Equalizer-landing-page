@@ -77,6 +77,13 @@
       //   left: 50%;
       transform: translatex(-45%);
     }
+
+    @include desktop {
+      left: 30%;
+      top: -3rem;
+      transform: translateX(0);
+      width: 20rem;
+    }
   }
 
   &--app {
@@ -124,16 +131,28 @@
 
     @include desktop {
       width: 27.875rem;
+      padding: var(--pad-rl-3_5);
+      left: 50%;
+      transform: translateX(0);
+      top: 5.62rem;
     }
 
     &-heading {
       font-size: var(--f-s-h2);
       margin-top: var(--mar-t-3);
       margin-bottom: var(--mar-b-75);
+
+      @include desktop {
+        margin-top: var(--mar-t-3_62);
+        margin-bottom: var(--mar-b-1_38);
+      }
     }
 
     &-text {
       line-height: 1.75;
+      @include desktop {
+        margin-bottom: var(--mar-b-2);
+      }
     }
 
     &-price {
@@ -141,6 +160,10 @@
       align-items: center;
       gap: 1rem;
       list-style: none;
+
+      @include desktop {
+        margin-bottom: var(--mar-b-2);
+      }
 
       &__amount {
         font-size: 4rem;
