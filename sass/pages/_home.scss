@@ -2,6 +2,10 @@
   @include tab {
     margin: var(--mar-rl-2);
   }
+
+  @include desktop {
+    margin: var(--mar-rl-10_31);
+  }
 }
 
 .header {
@@ -14,8 +18,13 @@
     margin: var(--mar-rl-2);
     margin-bottom: var(--mar-b-6);
   }
-}
 
+  @include desktop {
+    margin: var(--mar-rl-10_31);
+    margin-top: var(--mar-t-3_87);
+    margin-bottom: var(--mar-b-7_94);
+  }
+}
 .section__intro {
   margin: var(--mar-rl-1_5);
   margin-bottom: var(--mar-b-10_38);
@@ -24,6 +33,10 @@
     width: 70%;
     margin: 0;
     margin-bottom: var(--mar-b-15_56);
+  }
+
+  @include desktop {
+    width: 78%;
   }
 
   &--heading {
