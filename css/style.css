@@ -108,6 +108,7 @@ body {
   --mar-t-3: 3rem;
   --mar-t-5: 5rem;
   --mar-t-8: 8rem;
+  --mar-t-3_87: 3.87rem;
   --mar-t-10_25: 10.25rem;
   --mar-b-0_5: 0.5rem;
   --mar-b-75: 0.75rem;
@@ -123,6 +124,7 @@ body {
   --mar-b-4_5: 4.5rem;
   --mar-b-5: 5rem;
   --mar-b-6: 6rem;
+  --mar-b-7_94: 7.94rem;
   --mar-b-10_38: 10.38rem;
   --mar-b-11_44: 11.44rem;
   --mar-b-15_56: 15.56rem;
@@ -130,6 +132,7 @@ body {
   --mar-rl-1_5: 0 1.5rem;
   --mar-rl-1_75: 0 1.75rem;
   --mar-rl-2: 0 2rem;
+  --mar-rl-10_31: 0 10.31rem;
   --mar-r-3-l-2_5: 0 3rem 0 2.5rem;
   --width-card: min(100%, 24rem);
   --width-pattern: min(75%, 18rem); }
@@ -151,6 +154,10 @@ body {
   .container {
     margin: var(--mar-rl-2); } }
 
+@media (min-width: 70em) {
+  .container {
+    margin: var(--mar-rl-10_31); } }
+
 .header {
   margin: var(--mar-rl-1_5);
   padding-top: var(--pad-t-2_5);
@@ -159,6 +166,11 @@ body {
     .header {
       margin: var(--mar-rl-2);
       margin-bottom: var(--mar-b-6); } }
+  @media (min-width: 70em) {
+    .header {
+      margin: var(--mar-rl-10_31);
+      margin-top: var(--mar-t-3_87);
+      margin-bottom: var(--mar-b-7_94); } }
 
 .section__intro {
   margin: var(--mar-rl-1_5);
@@ -168,6 +180,9 @@ body {
       width: 70%;
       margin: 0;
       margin-bottom: var(--mar-b-15_56); } }
+  @media (min-width: 70em) {
+    .section__intro {
+      width: 78%; } }
   .section__intro--heading {
     font-size: var(--f-s-h1);
     margin-bottom: var(--mar-b-1_25); }
