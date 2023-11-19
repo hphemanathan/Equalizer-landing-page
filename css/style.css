@@ -220,6 +220,12 @@ body {
         width: 17rem;
         left: 10%;
         transform: translate(0); } }
+    @media (min-width: 70em) {
+      .section__download--app {
+        width: 19rem;
+        top: -12rem;
+        left: 10%;
+        transform: translate(0); } }
   .section__download--card {
     background-color: var(--color-red);
     color: var(--color-white);
@@ -236,6 +242,9 @@ body {
         width: 25rem;
         left: 65%;
         top: 11rem; } }
+    @media (min-width: 70em) {
+      .section__download--card {
+        width: 27.875rem; } }
     .section__download--card-heading {
       font-size: var(--f-s-h2);
       margin-top: var(--mar-t-3);
