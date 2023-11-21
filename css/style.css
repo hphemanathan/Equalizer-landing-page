@@ -292,10 +292,14 @@ body {
       background-color: var(--color-black);
       color: var(--color-white);
       margin-bottom: var(--mar-b-1); }
+      .section__download--card__button--iphone:hover, .section__download--card__button--iphone:active {
+        background-color: var(--color-green); }
     .section__download--card__button--android {
       background-color: var(--color-white);
       color: var(--color-black);
       margin-bottom: var(--mar-b-3); }
+      .section__download--card__button--android:hover, .section__download--card__button--android:active {
+        background-color: var(--color-yellow); }
 
 @media (min-width: 70em) {
   .footer {
@@ -327,6 +331,9 @@ body {
   display: flex;
   gap: 1rem;
   margin-bottom: var(--mar-b-5); }
+  .footer__icon__social:hover {
+    fill: var(--color-yellow);
+    cursor: pointer; }
 
 .btn,
 .btn:link,
