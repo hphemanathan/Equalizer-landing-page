@@ -11,17 +11,17 @@
 
 .header {
   margin: var(--mar-rl-1_5);
-  // margin-top: var(--mar-t-2_5);
+  margin-top: var(--mar-t-2_5);
   padding-top: var(--pad-t-2_5);
   margin-bottom: var(--mar-b-4);
 
   @include tab {
-    margin: var(--mar-rl-2);
+    margin: 0;
     margin-bottom: var(--mar-b-6);
   }
 
   @include desktop {
-    // margin: var(--mar-rl-10_31);
+    margin: 0;
     margin-top: var(--mar-t-3_87);
     margin-bottom: var(--mar-b-7_94);
   }
@@ -200,14 +200,13 @@
 }
 
 .footer {
-  @include desktop {
-    margin: auto;
-    width: var(--width-container);
-  }
-
   & > * {
     padding: var(--pad-rl-1_5);
+    @include tab {
+      padding: 0;
+    }
   }
+
   &__logo {
     margin-bottom: var(--mar-b-2);
   }
@@ -241,6 +240,7 @@
     margin-bottom: var(--mar-b-5);
 
     &__social:hover {
+      max-width: 100%;
       fill: var(--color-yellow);
       cursor: pointer;
     }
