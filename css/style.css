@@ -141,7 +141,8 @@ body {
   --mar-rl-10_31: 0 10.31rem;
   --mar-r-3-l-2_5: 0 3rem 0 2.5rem;
   --width-card: min(100%, 24rem);
-  --width-pattern: min(75%, 18rem); }
+  --width-pattern: min(75%, 18rem);
+  --width-container: min(90%, 69.375rem); }
 
 :root {
   --f-s-h1: clamp(2.5rem, 1.4437rem + 4.507vw, 5.5rem);
@@ -162,7 +163,8 @@ body {
 
 @media (min-width: 70em) {
   .container {
-    margin: var(--mar-rl-10_31); } }
+    margin: auto;
+    width: var(--width-container); } }
 
 .header {
   margin: var(--mar-rl-1_5);
@@ -174,7 +176,6 @@ body {
       margin-bottom: var(--mar-b-6); } }
   @media (min-width: 70em) {
     .header {
-      margin: var(--mar-rl-10_31);
       margin-top: var(--mar-t-3_87);
       margin-bottom: var(--mar-b-7_94); } }
 
@@ -303,7 +304,8 @@ body {
 
 @media (min-width: 70em) {
   .footer {
-    margin: var(--mar-rl-10_31); } }
+    margin: auto;
+    width: var(--width-container); } }
 
 .footer > * {
   padding: var(--pad-rl-1_5); }

@@ -4,7 +4,8 @@
   }
 
   @include desktop {
-    margin: var(--mar-rl-10_31);
+    margin: auto;
+    width: var(--width-container);
   }
 }
 
@@ -20,7 +21,7 @@
   }
 
   @include desktop {
-    margin: var(--mar-rl-10_31);
+    // margin: var(--mar-rl-10_31);
     margin-top: var(--mar-t-3_87);
     margin-bottom: var(--mar-b-7_94);
   }
@@ -200,7 +201,8 @@
 
 .footer {
   @include desktop {
-    margin: var(--mar-rl-10_31);
+    margin: auto;
+    width: var(--width-container);
   }
 
   & > * {
