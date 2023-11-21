@@ -238,8 +238,7 @@
     gap: 1rem;
     margin-bottom: var(--mar-b-5);
 
-    &__social:hover,
-    &__social:active {
+    &__social:hover {
       fill: var(--color-yellow);
       cursor: pointer;
     }
