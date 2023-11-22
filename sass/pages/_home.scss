@@ -200,6 +200,12 @@
 }
 
 .footer {
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   & > * {
     padding: var(--pad-rl-1_5);
     @include tab {
